@@ -4,5 +4,5 @@ model = joblib.load('amazon review')
 st.title('Amazon Review Prediction')
 ip = st.text_input('Enter your message')
 op = model.predict([ip])
-if st.button('Predict'):
+if st.button('Predict'):  
   st.title(op[0])     
